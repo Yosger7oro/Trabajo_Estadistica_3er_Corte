@@ -23,6 +23,16 @@ Se usa un entorno virtual en `.venv`. El script requiere las siguientes librerí
 - `palmerpenguins`
 - `scipy`
 
+También se incluye un archivo `requirements.txt` con las versiones usadas en este entorno.
+
+## Instalación
+
+Para instalar las dependencias desde `requirements.txt`, ejecuta:
+
+```powershell
+.c:\Users\User\Desktop\estadistica\.venv\Scripts\python.exe -m pip install -r requirements.txt
+```
+
 ## Ejecución
 
 Abre una terminal en `c:\Users\User\Desktop\estadistica` y ejecuta:
