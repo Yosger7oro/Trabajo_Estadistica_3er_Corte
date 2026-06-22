@@ -60,10 +60,10 @@ python -m pip install -r requirements.txt
 
 ## Ejecución
 
-Abre una terminal en `c:\Users\User\Desktop\estadistica` y ejecuta:
+Abre una terminal en la carpeta del proyecto y ejecuta:
 
 ```powershell
-.c:\Users\User\Desktop\estadistica\.venv\Scripts\python.exe .\analisis_penguins.py
+.\.venv\Scripts\python.exe .\analisis_penguins.py
 ```
 
 El script imprimirá el resumen del análisis en consola y guardará los gráficos en el directorio actual.
