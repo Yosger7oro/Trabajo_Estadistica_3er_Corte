@@ -52,6 +52,15 @@ El script imprimirá el resumen del análisis en consola y guardará los gráfic
 5. Ajuste de un modelo lineal que predice `body_mass_g` en función de las variables morfométricas, la especie, la isla y el sexo.
 6. Análisis de residuales con gráfico de residuales vs. ajustados y gráfico Q-Q.
 
+## Interpretación breve de la correlación
+
+El análisis calcula la matriz de correlaciones de Pearson entre `bill_length_mm`, `bill_depth_mm`, `flipper_length_mm` y `body_mass_g`.
+
+- `body_mass_g` y `flipper_length_mm` tienen una correlación positiva fuerte: los pingüinos con aletas más largas tienden a tener mayor masa corporal.
+- `body_mass_g` y `bill_length_mm` tienen una correlación moderada y positiva: los picos más largos suelen asociarse con mayor masa.
+- `body_mass_g` y `bill_depth_mm` tienen una correlación moderada negativa: picos más profundos no necesariamente implican mayor masa corporal.
+- `flipper_length_mm` y `bill_length_mm` presentan una correlación positiva moderada, lo que sugiere cierta asociación entre el tamaño del pico y el tamaño de la aleta.
+
 ## Resultado esperado
 
 - El script debe ejecutarse sin errores si el entorno virtual y las dependencias están instaladas.
