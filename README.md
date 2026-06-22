@@ -25,12 +25,37 @@ Se usa un entorno virtual en `.venv`. El script requiere las siguientes librerí
 
 También se incluye un archivo `requirements.txt` con las versiones usadas en este entorno.
 
-## Instalación
+## Entorno virtual
 
-Para instalar las dependencias desde `requirements.txt`, ejecuta:
+Antes de instalar las dependencias, crea y activa un entorno virtual desde la carpeta del proyecto.
+
+En PowerShell:
 
 ```powershell
-.c:\Users\User\Desktop\estadistica\.venv\Scripts\python.exe -m pip install -r requirements.txt
+python -m venv .venv
+.\.venv\Scripts\Activate.ps1
+```
+
+En CMD:
+
+```cmd
+python -m venv .venv
+.\.venv\Scripts\activate.bat
+```
+
+En Git Bash o WSL:
+
+```bash
+python -m venv .venv
+source .venv/bin/activate
+```
+
+## Instalación
+
+Una vez activado el entorno, instala las dependencias desde `requirements.txt`:
+
+```powershell
+python -m pip install -r requirements.txt
 ```
 
 ## Ejecución

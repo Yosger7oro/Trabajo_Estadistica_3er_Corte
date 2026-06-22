@@ -18,6 +18,10 @@ def main():
     print('\nValores faltantes por variable:')
     print(penguins.isna().sum())
 
+    # Rellenar valores numéricos faltantes con la media de cada variable
+    num_cols = ['bill_length_mm', 'bill_depth_mm', 'flipper_length_mm', 'body_mass_g']
+    penguins[num_cols] = penguins[num_cols].fillna(penguins[num_cols].mean())
+
     numeric = penguins[['bill_length_mm', 'bill_depth_mm', 'flipper_length_mm', 'body_mass_g']]
     print('\n--- Estadísticas descriptivas (numéricas) ---')
     print(numeric.describe())
